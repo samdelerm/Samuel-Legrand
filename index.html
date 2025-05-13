@@ -141,17 +141,15 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        (function() {
-            emailjs.init("user_YOUR_USER_ID"); // Remplacez YOUR_USER_ID par votre ID utilisateur EmailJS
-        })();
+        emailjs.init("5D19zPilYil1jZgCF");
 
         document.querySelector("#contact form").addEventListener("submit", function(event) {
             event.preventDefault();
 
             const serviceID = "default_service";
-            const templateID = "template_YOUR_TEMPLATE_ID"; // Remplacez YOUR_TEMPLATE_ID par l'ID de votre modèle EmailJS
+            const templateID = "template_dl751vn";
 
             const form = event.target;
             const formData = {
